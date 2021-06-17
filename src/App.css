@@ -23,6 +23,11 @@ header {
 }
 
 li {
-    color: var(--cream);
+    color: var(--pale-mint);
     list-style-type: none;
+}
+
+.navActive {
+    color: var(--cream);
+    font-weight: bold;
 }
