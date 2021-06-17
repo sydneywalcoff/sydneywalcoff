@@ -1,11 +1,20 @@
 import React from 'react';
+import Nav from '../Nav';
 
-const Header = () => {
-
+const Header = props => {
+    const {
+        titles = [],
+        setCurrentTitle,
+        currentTitle
+    } = props;
     return (
-        <header>
-            <h1 class="initials">SW</h1>
-            {/* Nav */}
+        <header className='row'>
+            <h1 className="initials">SW</h1>
+            <Nav
+            titles = {titles}
+            currentTitle = {currentTitle}
+            setCurrentTitle = {setCurrentTitle}
+            ></Nav>
         </header>
     );
 };
