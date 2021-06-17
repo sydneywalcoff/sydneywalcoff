@@ -21,3 +21,8 @@ header {
     font-family: 'Raleway', sans-serif;
     color: var(--cream);
 }
+
+li {
+    color: var(--cream);
+    list-style-type: none;
+}

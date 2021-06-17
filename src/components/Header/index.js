@@ -9,7 +9,7 @@ const Header = props => {
     } = props;
     return (
         <header className='row'>
-            <h1 className="initials">SW</h1>
+            <h1 className="initials col-sm-2">S W</h1>
             <Nav
             titles = {titles}
             currentTitle = {currentTitle}
