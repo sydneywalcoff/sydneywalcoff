@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,400&display=swap');
 :root {
     --blue: #93B7BE;
     --pale-mint: #F1FFFA;
@@ -13,6 +12,15 @@
     padding: 0 0;
 }
 
+.main-bg {
+    background-color: var(--pale-mint);
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
 /* header */
 header {
     background-color: var(--onyx);
@@ -20,6 +28,8 @@ header {
 
 .initials {
     font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
     color: var(--blue);
     align-self: center;
 }
@@ -39,6 +49,24 @@ li {
     font-weight: bold;
 }
 
+/* about me */
+.about-me {
+    width: 80%;
+    background-color: var(--blue);
+    justify-self: center;
+    padding: 3%;
+}
+
+.about-me img {
+    max-width: 100%;
+    border-radius: 50%;
+    padding: 2% 2%;
+}
+
+.about-me p {
+    font-size: 14px;
+}
+
 /* footer */
 footer {
     background-color: var(--onyx);
@@ -46,9 +74,15 @@ footer {
     align-items: center;
 }
 
+footer ul {
+    padding-left: 0;
+}
+
+footer li.col {
+    padding-top: 3%;
+}
+
 footer a {
     color: var(--blue);
     text-decoration: none;
 }
-
-footer ul a {}

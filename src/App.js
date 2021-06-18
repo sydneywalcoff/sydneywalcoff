@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import './App.css';
 import Header from "./components/Header";
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   const [titles] = useState([
-    { name: 'Portfolio' },
     { name: 'About Me' },
+    { name: 'Portfolio' },
     { name: 'Resume' },
     { name: 'Contact Me' }
   ]);
@@ -15,7 +16,7 @@ function App() {
   console.log('current title: ', currentTitle.name);
 
   return (
-    <div className="container">
+    <div className="container main-bg">
       <Header
         titles = {titles}
         setCurrentTitle = {setCurrentTitle}
@@ -23,7 +24,7 @@ function App() {
       ></Header>
       <main>
       {/* portfolio >> project */}
-      {/* about */}
+        <About />
       {/* conditional contact form */}
       </main>
       <Footer />
