@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,400&display=swap');
 :root {
     --blue: #93B7BE;
     --pale-mint: #F1FFFA;
@@ -19,6 +19,10 @@
 p {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* header */
@@ -67,6 +71,23 @@ li {
     font-size: 14px;
 }
 
+/* portfolio */
+.portfolio {
+    background-color: var(--blue);
+    width: 80%;
+}
+
+h2 {
+    color: var(--onyx);
+    font-family: 'Raleway', sans-serif;
+}
+
+.portfolio h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: var(--onyx);
+}
+
 /* footer */
 footer {
     background-color: var(--onyx);
@@ -84,5 +105,4 @@ footer li.col {
 
 footer a {
     color: var(--blue);
-    text-decoration: none;
 }

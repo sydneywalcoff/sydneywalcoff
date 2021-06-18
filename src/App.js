@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Footer from './components/Footer';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 
 function App() {
   const [titles] = useState([
@@ -23,10 +24,9 @@ function App() {
         currentTitle = {currentTitle.name}
       ></Header>
       <main>
-      {/* portfolio >> project */}
-      
-      {/* conditional contact form */}
-      <About />
+        <Portfolio />
+        {/* conditional contact form */}
+        {/* <About /> */}
       </main>
       <Footer />
     </div>
