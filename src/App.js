@@ -24,8 +24,9 @@ function App() {
       ></Header>
       <main>
       {/* portfolio >> project */}
-        <About />
+      
       {/* conditional contact form */}
+      <About />
       </main>
       <Footer />
     </div>
