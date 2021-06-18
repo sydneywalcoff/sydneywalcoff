@@ -13,6 +13,7 @@
     padding: 0 0;
 }
 
+/* header */
 header {
     background-color: var(--onyx);
 }
@@ -23,6 +24,7 @@ header {
     align-self: center;
 }
 
+/* nav */
 nav {
     padding-top: 2%;
 }
@@ -36,3 +38,17 @@ li {
     color: var(--cream);
     font-weight: bold;
 }
+
+/* footer */
+footer {
+    background-color: var(--onyx);
+    height: 8%;
+    align-items: center;
+}
+
+footer a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+footer ul a {}
