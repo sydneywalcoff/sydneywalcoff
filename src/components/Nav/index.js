@@ -6,8 +6,8 @@ const Nav = props => {
         setCurrentTitle
     } = props;
     return (
-        <nav>
-            <ul className="flex-row col-sm-10">
+        <nav className="col-10">
+            <ul className="row">
                 {titles.map((title) => (
                     <li className={`col ${currentTitle === title.name && 'navActive'}`} key={title.name}>
                         <span onClick={() => setCurrentTitle(title)}>{title.name}</span>

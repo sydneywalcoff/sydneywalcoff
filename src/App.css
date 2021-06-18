@@ -19,11 +19,16 @@ header {
 
 .initials {
     font-family: 'Raleway', sans-serif;
-    color: var(--cream);
+    color: var(--blue);
+    align-self: center;
+}
+
+nav {
+    padding-top: 2%;
 }
 
 li {
-    color: var(--pale-mint);
+    color: var(--blue);
     list-style-type: none;
 }
 

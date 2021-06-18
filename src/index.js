@@ -1,6 +1,6 @@
-import $ from 'jquery';
-import Popper from '@popperjs/core'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery';
+import '@popperjs/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

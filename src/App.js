@@ -14,7 +14,7 @@ function App() {
   console.log('current title: ', currentTitle.name);
 
   return (
-    <div>
+    <div class="container">
       <Header
         titles = {titles}
         setCurrentTitle = {setCurrentTitle}
