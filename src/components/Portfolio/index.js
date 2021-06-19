@@ -2,37 +2,53 @@ import React from 'react';
 // import Project from '../Project';
 import winePhoto from '../../img/wine.jpg';
 import musicPhoto from '../../img/music.jpg';
+import budgetPhoto from '../../img/budget.jpg';
+import techBlogPhoto from '../../img/tech-blog.jpg';
 
 const Portfolio = () => {
     const projects = [
         {
             name: 'Wine and Dine',
-            description: 'wine ',
+            description: 'wine and food pairing app',
             deployedUrl: '',
-            repoUrl: '',
+            repoUrl: 'https://github.com/UCB-Bootcamp/wine-and-dine',
             img: winePhoto
         },
         {
             name: 'MasterTicket',
-            description: 'fullstack app build',
-            deployedUrl: '',
-            repoUrl: '',
+            description: 'local events forum',
+            deployedUrl: 'https://masterticket.herokuapp.com/',
+            repoUrl: 'https://github.com/UCB-Bootcamp/masterTicket',
             img: musicPhoto
         },
         {
-            name: 'Photo Port',
-            description: '',
-            deployedUrl: '',
-            repoUrl: '',
-            img: ''
+            name: 'Budget Tracker',
+            description: 'budget tracker with on and offline capabilities',
+            deployedUrl: 'https://thawing-island-56218.herokuapp.com/',
+            repoUrl: 'https://github.com/sydneywalcoff/budget-tracker',
+            img: budgetPhoto
         },
         {
-            name: 'ZooKeepr',
+            name: 'Tech Blog',
             description: '',
-            deployedUrl: '',
-            repoUrl: '',
-            img: ''
-        }
+            deployedUrl: 'https://stormy-dawn-50873.herokuapp.com/',
+            repoUrl: 'https://github.com/sydneywalcoff/tech-blog',
+            img: techBlogPhoto
+        },
+        {
+            name: 'Project 5',
+            description: '',
+            deployedUrl: 'https://stormy-dawn-50873.herokuapp.com/',
+            repoUrl: 'https://github.com/sydneywalcoff/tech-blog',
+            img: techBlogPhoto
+        },
+        {
+            name: 'Project 6',
+            description: '',
+            deployedUrl: 'https://stormy-dawn-50873.herokuapp.com/',
+            repoUrl: 'https://github.com/sydneywalcoff/tech-blog',
+            img: techBlogPhoto
+        },
     ];
 
     return (

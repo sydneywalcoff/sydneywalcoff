@@ -16,6 +16,10 @@
     background-color: var(--pale-mint);
 }
 
+main {
+    margin-bottom: 14%;
+}
+
 p {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
