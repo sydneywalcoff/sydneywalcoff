@@ -1,5 +1,5 @@
 import React from 'react';
-// import Project from '../Project';
+import Project from '../Project';
 import winePhoto from '../../img/wine.jpg';
 import musicPhoto from '../../img/music.jpg';
 import budgetPhoto from '../../img/budget.jpg';
@@ -51,13 +51,9 @@ const Portfolio = () => {
         <div className="portfolio container">
             <h1 className="row">Projects</h1>
             {projects.map((project, i) => (
-                <div className="project row" key={project.name}>
-                    <img src={project.img} alt={project.description}/>
-                    <h2>{project.name}</h2>
-                    <p className='col-6'><a href={project.deployedUrl}>live</a></p>
-                    <p className='col-6'><a href={project.repoUrl}>repo</a></p>
-                </div>
+                < Project project={project} />
             ))}
+
         </div>
     );
 };
