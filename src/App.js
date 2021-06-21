@@ -24,7 +24,7 @@ function App() {
         currentTitle = {currentTitle.name}
       ></Header>
       <main>
-          <Portfolio />
+        <Portfolio />
         <About />
       </main>
       <Footer />

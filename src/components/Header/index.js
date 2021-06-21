@@ -8,7 +8,7 @@ const Header = props => {
         currentTitle
     } = props;
     return (
-        <header className='row'>
+        <header className='row fixed-top'>
             <h1 className="initials col-2">SW</h1>
             <Nav
             titles = {titles}
