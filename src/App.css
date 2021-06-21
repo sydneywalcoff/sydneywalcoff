@@ -12,6 +12,10 @@
     padding: 0 0;
 }
 
+.container {
+    margin-top: 15%;
+}
+
 .main-bg {
     background-color: var(--pale-mint);
 }
@@ -90,6 +94,11 @@ h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: var(--onyx);
+}
+
+/* contact */
+.contact {
+
 }
 
 /* footer */

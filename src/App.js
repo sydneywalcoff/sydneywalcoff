@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
   const [titles] = useState([
@@ -24,6 +25,7 @@ function App() {
         currentTitle = {currentTitle.name}
       ></Header>
       <main>
+        <Contact />
         <Portfolio />
         <About />
       </main>

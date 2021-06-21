@@ -51,7 +51,9 @@ const Portfolio = () => {
         <div className="portfolio container">
             <h1 className="row">Projects</h1>
             {projects.map((project, i) => (
-                < Project project={project} />
+                <div key={project.name}>
+                    < Project project={project} />
+                </div>
             ))}
 
         </div>
