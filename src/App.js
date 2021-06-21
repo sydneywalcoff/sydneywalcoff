@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 import Header from "./components/Header";
 import Footer from './components/Footer';
-// import About from './components/About';
+import About from './components/About';
 import Portfolio from './components/Portfolio';
 
 function App() {
@@ -17,16 +17,15 @@ function App() {
   console.log('current title: ', currentTitle.name);
 
   return (
-    <div className="container main-bg">
+    <div className="main-bg">
       <Header
         titles = {titles}
         setCurrentTitle = {setCurrentTitle}
         currentTitle = {currentTitle.name}
       ></Header>
       <main>
-        <Portfolio />
-        {/* conditional contact form */}
-        {/* <About /> */}
+          <Portfolio />
+        <About />
       </main>
       <Footer />
     </div>
