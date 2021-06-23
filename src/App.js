@@ -15,16 +15,17 @@ function App() {
   ]);
 
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
-  const currentPage = () => {
-    switch(currentTitle.name) {
-      case 'Portfolio': 
-        return <Portfolio />;
-      case 'About Me':
-        return <About />;
-      case 'Contact Me':
-        return <Contact />
-      default:
-        break;
+  
+  const currentPage = currentTitle => {
+    console.log(currentTitle.name)
+    if(currentTitle.name === 'Portfolio') {
+      return <Portfolio />
+    } else if(currentTitle.name === 'About Me') {
+      return <About />
+    } else if(currentTitle.name === 'Contact Me') {
+      return <Contact />
+    } else {
+      // return <Resume />
     }
   }
 
@@ -36,7 +37,7 @@ function App() {
         currentTitle = {currentTitle.name}
       ></Header>
       <main>
-        {currentPage}
+        {currentPage(currentTitle)}
       </main>
       <Footer />
     </div>
