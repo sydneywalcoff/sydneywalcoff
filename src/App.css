@@ -44,6 +44,8 @@ header {
     font-style: italic;
     color: var(--blue);
     align-self: center;
+    padding-left: 8%;
+    
 }
 
 /* nav */
