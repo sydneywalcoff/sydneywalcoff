@@ -15,7 +15,18 @@ function App() {
   ]);
 
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
-  console.log('current title: ', currentTitle.name);
+  const currentPage = () => {
+    switch(currentTitle.name) {
+      case 'Portfolio': 
+        return <Portfolio />;
+      case 'About Me':
+        return <About />;
+      case 'Contact Me':
+        return <Contact />
+      default:
+        break;
+    }
+  }
 
   return (
     <div className="main-bg">
@@ -25,9 +36,7 @@ function App() {
         currentTitle = {currentTitle.name}
       ></Header>
       <main>
-        <Contact />
-        <Portfolio />
-        <About />
+        {currentPage}
       </main>
       <Footer />
     </div>
