@@ -40,8 +40,6 @@ function App() {
       ></Header>
       <main>
         {currentPage(currentTitle)}
-
-
       </main>
       <Footer />
     </div>

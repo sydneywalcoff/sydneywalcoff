@@ -18,7 +18,7 @@ const ContactForm = () => {
                     <textarea name="message" rows="5"  />
                 </div>
             </form>
-      </section>
+        </section>  
     );
 };
 
