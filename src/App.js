@@ -32,13 +32,13 @@ function App() {
   };
 
   return (
-    <div className="main-bg">
+    <div>
       <Header
         titles = {titles}
         setCurrentTitle = {setCurrentTitle}
         currentTitle = {currentTitle.name}
       ></Header>
-      <main>
+      <main  className="main-bg">
         {currentPage(currentTitle)}
       </main>
       <Footer />
