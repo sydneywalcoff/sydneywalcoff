@@ -32,17 +32,17 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <Header
         titles = {titles}
         setCurrentTitle = {setCurrentTitle}
         currentTitle = {currentTitle.name}
       ></Header>
-      <main  className="main-bg">
+      <main>
         {currentPage(currentTitle)}
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

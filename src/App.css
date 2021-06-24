@@ -12,25 +12,30 @@
     padding: 0 0;
 }
 
-.container {
-    margin-top: 25%;
+html, body, #root {
+    height: 100%;
 }
 
-.main-bg {
+#root {
     background-color: var(--pale-mint);
 }
 
 main {
-    margin-bottom: 14%;
+    height: 100%;
+
 }
 
-p {
+p, label {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
 }
 
 a {
     text-decoration: none;
+}
+
+section {
+    margin-top: 35%;
 }
 
 /* header */
@@ -99,9 +104,14 @@ h2 {
 }
 
 /* contact */
-/* .contact {
+.contact {
+    background-color: var(--blue);
+    width: 80%;
+}
 
-} */
+#contact-title {
+    color: var(--onyx);
+}
 
 /* footer */
 footer {
