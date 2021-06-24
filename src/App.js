@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import ContactForm from './components/Contact';
 
 function App() {
   const [titles] = useState([
@@ -15,7 +15,21 @@ function App() {
   ]);
 
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
-  console.log('current title: ', currentTitle.name);
+  const currentPage = ({ name }) => {
+    console.log(name)
+    switch (name) {
+      case 'About Me':
+        return <About />
+      case 'Portfolio':
+        return <Portfolio />;
+      case 'Contact Me':
+        return <ContactForm />
+      // case 'Resume':
+      //   return <Resume />;
+      default:
+        break;
+    }
+  };
 
   return (
     <div className="main-bg">
@@ -25,9 +39,9 @@ function App() {
         currentTitle = {currentTitle.name}
       ></Header>
       <main>
-        <Contact />
-        <Portfolio />
-        <About />
+        {currentPage(currentTitle)}
+
+
       </main>
       <Footer />
     </div>
