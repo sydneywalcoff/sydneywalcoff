@@ -5,8 +5,25 @@ const ContactForm = () => {
     const [formState, setFormState] = useState({ name: '', email:'', message:'' });
     const { name, email, message } = formState;
 
+    const [errorMessage, setErrorMessage]= useState('');
+
     function handleChange(e) {
-        setFormState({...formState, [e.target.value]: e.target.value })
+        if(e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            if(!isValid){
+                setErrorMessage('Your email is invalid');
+            }
+        } else {
+            if(!e.target.value.length) {
+                setErrorMessage(`Your ${e.target.name} is required`);
+            } else {
+                setErrorMessage('');
+            }
+        }
+
+        if(!errorMessage) {
+            setFormState({...formState, [e.target.value]: e.target.value })
+        }
     }
 
     function handleSubmit(e) {
@@ -20,17 +37,22 @@ const ContactForm = () => {
             <form id="contact-form" className="row justify-content-center" onSubmit={handleSubmit}>
                 <div className='row'>
                     <label htmlFor="name" className='font-weight-bold'>Name:</label>
-                    <input type="text" name="name" defaultValue={name} onChange={handleChange}/>
+                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
                 </div>
                 <div className='row'>
                     <label htmlFor="email" className='font-weight-bold'>Email address:</label>
-                    <input type="email" name="email" defaultValue={email}  onChange={handleChange}/>
+                    <input type="email" name="email" defaultValue={email}  onBlur={handleChange}/>
                 </div>
                 <div className='row'>
                     <label htmlFor="message" className='font-weight-bold'>Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onChange={handleChange}/>
+                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}/>
                 </div>
-                <div className="row justify-content-center">
+                {errorMessage && (
+                    <div>
+                        <p>{errorMessage}</p>
+                    </div>
+                )}
+                <div className="row justify-content-center mt-2">
                     <button className="btn" id="contact-button" type="submit">Submit</button>
                 </div>
             </form>
