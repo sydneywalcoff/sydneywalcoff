@@ -12,7 +12,7 @@
     padding: 0 0;
 }
 
-html, body, #root {
+html, body, #root, main {
     height: 100%;
 }
 
@@ -20,22 +20,13 @@ html, body, #root {
     background-color: var(--pale-mint);
 }
 
-main {
-    height: 100%;
-
-}
 
 p, label {
     font-family: 'Raleway', sans-serif;
-    font-weight: 200;
 }
 
 a {
     text-decoration: none;
-}
-
-section {
-    margin-top: 35%;
 }
 
 /* header */
@@ -111,6 +102,12 @@ h2 {
 
 #contact-title {
     color: var(--onyx);
+}
+
+button {
+    width: 80% !important;
+    color: var(--cream) !important;
+    background-color: var(--onyx) !important;
 }
 
 /* footer */

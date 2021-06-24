@@ -38,7 +38,7 @@ function App() {
         setCurrentTitle = {setCurrentTitle}
         currentTitle = {currentTitle.name}
       ></Header>
-      <main>
+      <main className="row align-items-center">
         {currentPage(currentTitle)}
       </main>
       <Footer />
