@@ -18,6 +18,7 @@ const ContactForm = () => {
                     <textarea name="message" rows="5"  />
                 </div>
             </form>
+            <p className="row justify-content-center pt-3">sydney.walcoff@gmail.com</p>
         </section>  
     );
 };
