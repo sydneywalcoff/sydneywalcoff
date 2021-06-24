@@ -3,9 +3,7 @@ import React from 'react';
 const Nav = props => {
     const { titles,
         currentTitle,
-        setCurrentTitle,
-        contactSelected,
-        setContactSelected
+        setCurrentTitle
     } = props;
     return (
         <nav className="col-10">
