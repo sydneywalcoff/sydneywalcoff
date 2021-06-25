@@ -4,7 +4,7 @@ import photo from '../../assets/img/about-me.jpg';
 const About = () => {
     return (
         <section className="about-me container">
-            <div className='row'><h1 class="text-center display-2">Hi. I'm Sydney!</h1></div>
+            <div className='row'><h1 className="text-center display-2">Hi. I'm Sydney!</h1></div>
             <div className="row">
                 <img src={photo} alt="Sydney smiling in a grey turtleneck" className="col-sm-4" />
                 <div className="col align-self-center">

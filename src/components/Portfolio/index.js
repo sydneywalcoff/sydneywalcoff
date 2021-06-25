@@ -49,12 +49,16 @@ const Portfolio = () => {
 
     return (
         <div className="portfolio container">
-            <h1 className="row">Projects</h1>
-            {projects.map((project, i) => (
-                <div key={project.name}>
-                    < Project project={project} />
-                </div>
-            ))}
+            <div class="row">
+                <h1 className="text-center display-3 title">Projects</h1>
+            </div>
+            <div class="row">
+                {projects.map((project, i) => (
+                    <div key={project.name}>
+                        < Project project={project} />
+                    </div>
+                ))}
+            </div>
 
         </div>
     );
