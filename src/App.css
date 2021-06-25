@@ -37,6 +37,15 @@ li {
     list-style-type: none;
 }
 
+h2 {
+    color: var(--onyx);
+    font-family: 'Raleway', sans-serif;
+}
+
+#title {
+    color: var(--onyx);
+}
+
 
 /* header */
 header {
@@ -84,11 +93,6 @@ header {
     width: 80%;
 }
 
-h2 {
-    color: var(--onyx);
-    font-family: 'Raleway', sans-serif;
-}
-
 .portfolio h1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -101,9 +105,6 @@ h2 {
     width: 80%;
 }
 
-#contact-title {
-    color: var(--onyx);
-}
 
 button {
     width: 80% !important;

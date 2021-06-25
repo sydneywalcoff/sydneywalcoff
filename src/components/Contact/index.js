@@ -33,7 +33,7 @@ const ContactForm = () => {
 
     return (
         <section className = "container contact p-3">
-            <h1 className='row display-1 justify-content-center' id='contact-title'>Contact me</h1>
+            <h1 className='row display-1 justify-content-center' id='title'>Contact me</h1>
             <form id="contact-form" className="row justify-content-center" onSubmit={handleSubmit}>
                 <div className='row'>
                     <label htmlFor="name" className='font-weight-bold'>Name:</label>
