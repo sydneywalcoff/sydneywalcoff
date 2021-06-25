@@ -6,7 +6,7 @@ const Nav = props => {
         setCurrentTitle
     } = props;
     return (
-        <nav className="col-10">
+        <nav className="col">
             <ul className="row align-items-center">
                 {titles.map((title) => (
                     <li className={`col text-center ${currentTitle === title.name && 'navActive'}`} key={title.name}>

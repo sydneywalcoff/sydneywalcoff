@@ -16,6 +16,7 @@
 
 html, body, #root, main, ul {
     height: 100%;
+    margin: 0;
 }
 
 #root {
@@ -40,6 +41,7 @@ li {
 /* header */
 header {
     background-color: var(--onyx);
+    height: 8%;
 }
 
 .initials {
@@ -49,7 +51,7 @@ header {
     color: var(--blue);
     align-self: center;
     padding-left: 8%;
-    
+    margin-bottom: 0;
 }
 
 /* nav */
