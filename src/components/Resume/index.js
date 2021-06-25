@@ -4,25 +4,19 @@ import resume from '../../assets/resume.PDF'
 const Resume = () => {
     return (
         <section className="container resume">
-            <h1 className="display-3 col title">History</h1>
+            <div class="row">
+                <h1 className="display-3 col title text-center">History</h1>
+            </div>
             <div className="row">
-                <div className = 'col-8'>
+                <div className = 'col justify-content-center'>
                     <h2>Resume</h2>
                     <a href={resume} download><p>Download my resume</p></a>
                 </div>
-                <div className ='col-4'>
+                <div className ='col'>
                     <h4 className="display-6 title">Technologies</h4>
-                    <ul className="technologies">
-                        <li>MERN Stack</li>
-                        <li>JavaScript</li>
-                        <li>HTML5/CSS3</li>
-                        <li>JQuery</li>
-                        <li>React</li>
-                        <li>MongoDB</li>
-                        <li>SQL</li>
-                        <li>Git</li>
-                        <li>Heroku</li>
-                    </ul>
+                    <p>MERN Stack
+                    JavaScript, HTML5/CSS3, JQuery, React, MongoDB, SQL, Git, Heroku
+                    </p>
                 </div>
             </div>
         </section>
