@@ -1,11 +1,11 @@
 import React from 'react';
 import Project from '../Project';
-import winePhoto from '../../img/wine.jpg';
-import musicPhoto from '../../img/music.jpg';
-import budgetPhoto from '../../img/budget.jpg';
-import techBlogPhoto from '../../img/tech-blog.jpg';
-import runPhoto from '../../img/run.jpg';
-import pizzaPhoto from '../../img/pizza.jpg';
+import winePhoto from '../../assets/img/wine.jpg';
+import musicPhoto from '../../assets/img/music.jpg';
+import budgetPhoto from '../../assets/img/budget.jpg';
+import techBlogPhoto from '../../assets/img/tech-blog.jpg';
+import runPhoto from '../../assets/img/run.jpg';
+import pizzaPhoto from '../../assets/img/pizza.jpg';
 
 const Portfolio = () => {
     const projects = [

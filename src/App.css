@@ -42,7 +42,7 @@ h2 {
     font-family: 'Raleway', sans-serif;
 }
 
-#title {
+.title {
     color: var(--onyx);
 }
 
@@ -73,7 +73,6 @@ header {
 .about-me {
     width: 80%;
     background-color: var(--blue);
-    justify-self: center;
     padding: 3%;
 }
 
@@ -110,6 +109,18 @@ button {
     width: 80% !important;
     color: var(--cream) !important;
     background-color: var(--onyx) !important;
+}
+
+/* resume */
+.resume {
+    background-color: var(--blue);
+    list-style-type: square;
+    width: 80%;
+    padding: 3%;
+}
+
+.technologies li {
+    color: var(--onyx);
 }
 
 /* footer */
