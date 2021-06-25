@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,400&display=swap');
+
+/* general styles */
 :root {
     --blue: #93B7BE;
     --pale-mint: #F1FFFA;
@@ -12,7 +14,7 @@
     padding: 0 0;
 }
 
-html, body, #root, main {
+html, body, #root, main, ul {
     height: 100%;
 }
 
@@ -28,6 +30,12 @@ p, label {
 a {
     text-decoration: none;
 }
+
+li {
+    color: var(--blue);
+    list-style-type: none;
+}
+
 
 /* header */
 header {
@@ -45,15 +53,6 @@ header {
 }
 
 /* nav */
-nav {
-    padding-top: 2%;
-}
-
-li {
-    color: var(--blue);
-    list-style-type: none;
-}
-
 .navActive {
     color: var(--cream);
     font-weight: bold;
@@ -115,14 +114,6 @@ footer {
     background-color: var(--onyx);
     height: 8%;
 }
-/* 
-footer ul {
-    padding-left: 0;
-}
-
-footer li.col {
-    padding-top: 3%;
-} */
 
 footer a {
     color: var(--blue);

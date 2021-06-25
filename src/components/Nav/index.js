@@ -7,9 +7,9 @@ const Nav = props => {
     } = props;
     return (
         <nav className="col-10">
-            <ul className="row">
+            <ul className="row align-items-center">
                 {titles.map((title) => (
-                    <li className={`col ${currentTitle === title.name && 'navActive'}`} key={title.name}>
+                    <li className={`col text-center ${currentTitle === title.name && 'navActive'}`} key={title.name}>
                         <span onClick={() => setCurrentTitle(title)}>{title.name}</span>
                     </li>
                 ))}

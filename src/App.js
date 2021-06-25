@@ -8,21 +8,21 @@ import ContactForm from './components/Contact';
 
 function App() {
   const [titles] = useState([
-    { name: 'About Me' },
+    { name: 'About' },
     { name: 'Portfolio' },
     { name: 'Resume' },
-    { name: 'Contact Me' }
+    { name: 'Contact' }
   ]);
 
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
   const currentPage = ({ name }) => {
     console.log(name)
     switch (name) {
-      case 'About Me':
+      case 'About':
         return <About />
       case 'Portfolio':
         return <Portfolio />;
-      case 'Contact Me':
+      case 'Contact':
         return <ContactForm />
       // case 'Resume':
       //   return <Resume />;
