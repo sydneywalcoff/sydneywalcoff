@@ -114,17 +114,20 @@ button {
 footer {
     background-color: var(--onyx);
     height: 8%;
-    align-items: center;
 }
-
+/* 
 footer ul {
     padding-left: 0;
 }
 
 footer li.col {
     padding-top: 3%;
-}
+} */
 
 footer a {
     color: var(--blue);
+}
+
+footer a:hover {
+    color: var(--cream);
 }
