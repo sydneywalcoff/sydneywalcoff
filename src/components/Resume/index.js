@@ -4,7 +4,7 @@ import resume from '../../assets/resume.PDF'
 const Resume = () => {
     return (
         <section className="container resume">
-            <div class="row">
+            <div className="row">
                 <h1 className="display-3 col title text-center">History</h1>
             </div>
             <div className="row">
