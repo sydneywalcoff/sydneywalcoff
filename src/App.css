@@ -98,6 +98,11 @@ header {
     color: var(--onyx);
 }
 
+
+.project-text a{
+    color: var(--onyx);
+}
+
 /* contact */
 .contact {
     background-color: var(--blue);

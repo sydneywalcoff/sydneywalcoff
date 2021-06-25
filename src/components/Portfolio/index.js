@@ -48,19 +48,18 @@ const Portfolio = () => {
     ];
 
     return (
-        <div className="portfolio container">
+        <section className="portfolio container">
             <div class="row">
                 <h1 className="text-center display-3 title">Projects</h1>
             </div>
-            <div class="row">
+            <div class="flex-row">
                 {projects.map((project, i) => (
                     <div key={project.name}>
                         < Project project={project} />
                     </div>
                 ))}
             </div>
-
-        </div>
+        </section>
     );
 };
 
