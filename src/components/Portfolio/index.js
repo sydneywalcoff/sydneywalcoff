@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '../Project';
 import winePhoto from '../../assets/img/wine.jpg';
 import musicPhoto from '../../assets/img/music.jpg';
+import musicPhoto2 from '../../assets/img/music2.jpg';
 import budgetPhoto from '../../assets/img/budget.jpg';
 import techBlogPhoto from '../../assets/img/tech-blog.jpg';
 import runPhoto from '../../assets/img/run.jpg';
@@ -10,16 +11,22 @@ import pizzaPhoto from '../../assets/img/pizza.jpg';
 const Portfolio = () => {
     const projects = [
         {
-            name: 'Wine and Dine',
-            deployedUrl: 'http://ucb-bootcamp.GitHub.io/wine-and-dine',
-            repoUrl: 'https://github.com/UCB-Bootcamp/wine-and-dine',
-            img: winePhoto
+            name: 'MasterTicket2.0',
+            deployedUrl: 'https://masterticket2.herokuapp.com/',
+            repoUrl: 'https://github.com/UCB-Bootcamp/masterTicket2.0',
+            img: musicPhoto2
         },
         {
             name: 'MasterTicket',
             deployedUrl: 'https://masterticket.herokuapp.com/',
             repoUrl: 'https://github.com/UCB-Bootcamp/masterTicket',
             img: musicPhoto
+        },
+        {
+            name: 'Wine and Dine',
+            deployedUrl: 'http://ucb-bootcamp.GitHub.io/wine-and-dine',
+            repoUrl: 'https://github.com/UCB-Bootcamp/wine-and-dine',
+            img: winePhoto
         },
         {
             name: 'Budget Tracker',
