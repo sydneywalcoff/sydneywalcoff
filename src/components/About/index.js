@@ -1,6 +1,5 @@
 import React from 'react';
 import photo from '../../assets/img/about-me.jpg';
-import wwf from '../../assets/img/WWF-logo.png'
 
 const About = () => {
     const organizations = [
@@ -8,7 +7,6 @@ const About = () => {
             name: 'World Wildlife Fund',
             industry: 'Animal Conservation',
             url: 'worldwildlife.org',
-            image: wwf
         }
     ];
     return (
