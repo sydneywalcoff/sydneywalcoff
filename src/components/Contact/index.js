@@ -56,7 +56,7 @@ const ContactForm = () => {
                     </div>
                 )}
                 <div className="row justify-content-center mt-2">
-                    <button className="btn" id="contact-button" type="submit">Submit</button>
+                    <button className="btn btn-outline-dark" id="contact-button" type="submit">Submit</button>
                 </div>
             </form>
         </section>  
