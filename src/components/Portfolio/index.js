@@ -65,7 +65,7 @@ const Portfolio = () => {
                 </div>
                 <div className="secondary-projects">
                     {projects.map((project, i) => (
-                        <div key={project.name} className="project">
+                        <div key={project.name} className="project m-2">
                             < Project project={project} />
                         </div>
                     ))}
