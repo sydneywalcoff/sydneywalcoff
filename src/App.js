@@ -17,7 +17,6 @@ function App() {
 
   const [currentTitle, setCurrentTitle] = useState(titles[0]);
   const currentPage = ({ name }) => {
-    console.log(name)
     switch (name) {
       case 'About':
         return <About />

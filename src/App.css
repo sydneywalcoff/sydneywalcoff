@@ -22,9 +22,12 @@ a:hover {
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: center;
+}
+
+ul {
+    list-style-type: none;
 }
 
 section {
