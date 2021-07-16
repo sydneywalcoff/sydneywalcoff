@@ -116,6 +116,10 @@ button {
     background-color: var(--onyx) !important;
 }
 
+.email {
+    color: var(--onyx) !important;
+}
+
 /* resume */
 .resume {
     background-color: var(--blue);

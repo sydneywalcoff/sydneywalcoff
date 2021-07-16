@@ -34,6 +34,9 @@ const ContactForm = () => {
     return (
         <section className = "container contact p-3">
             <h1 className='row display-1 justify-content-center' id='title'>Contact me</h1>
+            <p className='text-center'>Hey! This form is cool, but not connected to anything at the moment. Please contact me via email below!
+            <a href="mailto: sydney.walcoff@gmail.com" className="row justify-content-center pt-3 email">sydney.walcoff@gmail.com</a></p>
+            
             <form id="contact-form" className="row justify-content-center" onSubmit={handleSubmit}>
                 <div className='row'>
                     <label htmlFor="name" className='font-weight-bold'>Name:</label>
@@ -56,7 +59,6 @@ const ContactForm = () => {
                     <button className="btn" id="contact-button" type="submit">Submit</button>
                 </div>
             </form>
-            <p className="row justify-content-center pt-3">sydney.walcoff@gmail.com</p>
         </section>  
     );
 };
