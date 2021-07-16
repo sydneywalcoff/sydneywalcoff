@@ -1,6 +1,7 @@
 /* Universal Styles */
 :root{
     --primary-color: #000;
+    --secondary-color: #fff
 }
 
 * {
@@ -48,6 +49,7 @@ header {
     justify-content: center;
     margin: 20px;
     flex-wrap: wrap;
+    background-color: var(--secondary-color);
 }
 
 header h1 {
@@ -63,6 +65,10 @@ header nav ul {
 
 header nav ul li {
     margin: 20px;
+}
+
+.navActive span {
+    font-weight:bold;
 }
 
 /* about */
@@ -91,19 +97,12 @@ header nav ul li {
     display: flex;
     flex-direction: column;
     margin-bottom: 1%;
-}
-
-.feature-project a {
-    width: 100%;
-    display: flex;
     justify-content: center;
 }
 
-.feature-project a img {
-    width: 80%;
+.feature-project img {
     height: 300px;
     object-fit: cover;
-    justify-content: center
 }
 
 .feature-project h3, .feature-project p{
@@ -166,6 +165,11 @@ header nav ul li {
 
 
 /* footer */
+footer {
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+}
+
 footer nav ul {
     display: flex;
     padding: 0;
