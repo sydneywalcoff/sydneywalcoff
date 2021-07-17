@@ -8,14 +8,14 @@ const Resume = () => {
                 <h1 className="display-3 col title text-center">History</h1>
             </div>
             <div className="row">
-                <div className = 'col justify-content-center'>
-                    <h2>Resume</h2>
-                    <a href={resume} download><p>Download my resume</p></a>
+                <div className = 'col-5'>
+                    <h4 className='section-title'>Resume</h4>
+                    <p>Click <a href={resume} id="resume-link" download>here</a> to download my resume</p>
                 </div>
-                <div className ='col'>
-                    <h4 className="display-6 title">Technologies</h4>
-                    <p>MERN Stack
-                    JavaScript, HTML5/CSS3, JQuery, React, MongoDB, SQL, Git, Heroku
+                <div className='col-1'></div>
+                <div className ='col-5'>
+                    <h4 className="section-title">Technologies</h4>
+                    <p>MERN Stack, <br/> JavaScript, <br/> HTML5/CSS3, <br/> JQuery, <br/> React, <br/> MongoDB, <br/> SQL, <br/> Git, <br/> Heroku
                     </p>
                 </div>
             </div>

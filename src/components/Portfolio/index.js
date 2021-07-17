@@ -9,13 +9,13 @@ import runPhoto from '../../assets/img/run.jpg';
 import pizzaPhoto from '../../assets/img/pizza.jpg';
 
 const Portfolio = () => {
+    const featuredProject =         {
+        name: 'MasterTicket2.0',
+        deployedUrl: 'https://masterticket2.herokuapp.com/',
+        repoUrl: 'https://github.com/UCB-Bootcamp/masterTicket2.0',
+        img: musicPhoto2
+    };
     const projects = [
-        {
-            name: 'MasterTicket2.0',
-            deployedUrl: 'https://masterticket2.herokuapp.com/',
-            repoUrl: 'https://github.com/UCB-Bootcamp/masterTicket2.0',
-            img: musicPhoto2
-        },
         {
             name: 'MasterTicket',
             deployedUrl: 'https://masterticket.herokuapp.com/',
@@ -55,16 +55,21 @@ const Portfolio = () => {
     ];
 
     return (
-        <section className="portfolio container">
-            <div class="row">
+        <section className="portfolio">
+            <div className="row">
                 <h1 className="text-center display-3 title">Projects</h1>
             </div>
-            <div class="flex-row">
-                {projects.map((project, i) => (
-                    <div key={project.name}>
-                        < Project project={project} />
-                    </div>
-                ))}
+            <div className="projects row">
+                <div className ='feature-project'>
+                    < Project project={featuredProject} />
+                </div>
+                <div className="secondary-projects">
+                    {projects.map((project, i) => (
+                        <div key={project.name} className="project m-2">
+                            < Project project={project} />
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

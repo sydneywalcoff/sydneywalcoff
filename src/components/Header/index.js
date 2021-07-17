@@ -9,7 +9,7 @@ const Header = props => {
     } = props;
     return (
         <header className='row sticky-top'>
-            <h1 className="initials col-2">SW</h1>
+            <h1>Sydney Walcoff</h1>
             <Nav
             titles = {titles}
             currentTitle = {currentTitle}
