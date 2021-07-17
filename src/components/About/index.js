@@ -2,13 +2,13 @@ import React from 'react';
 import photo from '../../assets/img/about-me.jpg';
 
 const About = () => {
-    const organizations = [
-        {
-            name: 'World Wildlife Fund',
-            industry: 'Animal Conservation',
-            url: 'worldwildlife.org',
-        }
-    ];
+    let organizations
+    //     {
+    //         name: 'World Wildlife Fund',
+    //         industry: 'Animal Conservation',
+    //         url: 'worldwildlife.org',
+    //     }
+    // ];
     return (
         <section className="about-me container">
             <div className='row'><h4 className="text-center display-3">Hi. I'm Sydney!</h4></div>
