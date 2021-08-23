@@ -20,6 +20,7 @@ a {
 
 a:hover {
     font-weight: bolder;
+    color:var(--primary-color)
 }
 
 nav ul {
