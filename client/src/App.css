@@ -6,6 +6,11 @@
 
 * {
     margin: 0 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
 }
 
 body {
@@ -45,12 +50,13 @@ section {
 
 /* header */
 header {
-    display: flex;
+    /* display: flex; */
     color: var(--primary-color);
     justify-content: center;
     margin: 20px;
     flex-wrap: wrap;
     background-color: var(--secondary-color);
+    width: 100%
 }
 
 header h1 {
