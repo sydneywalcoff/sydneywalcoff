@@ -55,7 +55,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <section className="portfolio">
+        <section className="portfolio container">
             <div className="row">
                 <h1 className="text-center display-3 title">Projects</h1>
             </div>
@@ -65,7 +65,7 @@ const Portfolio = () => {
                 </div>
                 <div className="secondary-projects">
                     {projects.map((project, i) => (
-                        <div key={project.name} className="project m-2">
+                        <div key={i} className="project m-2">
                             < Project project={project} />
                         </div>
                     ))}

@@ -94,6 +94,10 @@ header nav ul li {
 }
 
 /* projects */
+.portfolio {
+    max-width: 95%;
+}
+
 .projects {
     margin-bottom: 4%;
     display: flex;
