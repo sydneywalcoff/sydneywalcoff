@@ -134,18 +134,18 @@ header span {
     margin: 0 auto;
 }
 
-.secondary-projects {
+.tertiary-projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1%;
 }
 
-.secondary-projects .project img {
-    width: 300px;
+.tertiary-projects .project {
+    width: 30%;
 }
 
-.secondary-projects a {
+.tertiary-projects a {
     width: 100%;
     display: flex;
     justify-content: center;

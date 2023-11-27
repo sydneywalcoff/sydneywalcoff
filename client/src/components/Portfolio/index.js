@@ -52,11 +52,10 @@ const Portfolio = () => {
                     <Project project={featuredProjects[0]}/>
                     <Project project={featuredProjects[1]} />
                 </div>
-                <div className="secondary-projects">
+                <h3 className='display-6 text-center'>Bootcamp Projects</h3>
+                <div className="tertiary-projects">
                     {projects.map((project, i) => (
-                        <div key={i} className="m-2">
-                            <Project project={project} />
-                        </div>
+                        <Project project={project} />
                     ))}
                 </div>
             </div>
