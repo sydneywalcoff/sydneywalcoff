@@ -2,13 +2,6 @@ import React from 'react';
 import photo from '../../assets/img/about-me.jpg';
 
 const About = () => {
-    let organizations
-    //     {
-    //         name: 'World Wildlife Fund',
-    //         industry: 'Animal Conservation',
-    //         url: 'worldwildlife.org',
-    //     }
-    // ];
     return (
         <section className="about-me container">
             <div className='row'><h4 className="text-center display-3">Hi. I'm Sydney!</h4></div>
@@ -19,18 +12,6 @@ const About = () => {
                     <p >Outside of coding, I spend my time watching baseball (Go Dodgers!), playing with my dog, Liba, and making music.</p>
                 </div>
             </div>
-            {organizations && (
-                <div className='row'>
-                    <p>I strive to be an activist and advocate in all spaces. These are some organizations that I want to highlight.</p>
-                {organizations.map(org => (
-                    <div className="orgs" key={org.name}>
-                        <a href={org.url}><img src={org.img} alt="wwf logo"/></a>
-                        <h2>{org.name}</h2>
-                        <p>{org.industry}</p>
-                    </div>
-                ))}
-                </div>
-            )}
         </section>
     );
 };
