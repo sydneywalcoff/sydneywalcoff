@@ -10,6 +10,8 @@ const Project = ({ project }) => {
                 <div className="project-text row">
                     {project.deployedUrl && (<p className='col-6 text-center'><a href={project.deployedUrl}>live</a></p>)}
                     <p className='col-6 text-center'><a href={project.repoUrl}>repo</a></p>
+                    {project.description && (<p className='text-center'>{project.description}</p>)}
+                    {project.etc && (<p className='text-center bold'>{project.etc}</p>)}
                 </div>
             </div>
         </div>

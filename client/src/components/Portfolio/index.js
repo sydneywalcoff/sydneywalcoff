@@ -3,6 +3,7 @@ import Project from '../Project';
 import winePhoto from '../../assets/img/wine.jpg';
 import musicPhoto from '../../assets/img/music.jpg';
 import musicPhoto2 from '../../assets/img/music2.jpg';
+import EAPhoto from '../../assets/img/EA-banner-long.png';
 
 const Portfolio = () => {
     const featuredProjects = [
@@ -10,13 +11,15 @@ const Portfolio = () => {
             name: 'AppTrack',
             deployedUrl: 'https://sw-app-tracker.herokuapp.com/',
             repoUrl: 'https://github.com/sydneywalcoff/app-tracker',
-            img: musicPhoto2
+            img: musicPhoto2,
+            description: 'AppTrack is a TypeScript React MongoDB Node.js application for job seekers to track their applications and optimize their job search.',
+            etc: 'login: test | password: test'
         },
         {
             name: 'Expunge Assist',
             deployedUrl: 'https://expungeassist.org/',
             repoUrl: 'https://github.com/hackforla/expunge-assist',
-            img: musicPhoto2
+            img: EAPhoto
         }
     ];
     const projects = [
