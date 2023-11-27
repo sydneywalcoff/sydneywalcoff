@@ -15,7 +15,7 @@ const Resume = () => {
                 <div className='col-1'></div>
                 <div className ='col-5'>
                     <h4 className="section-title">Technologies</h4>
-                    <p>MERN Stack, <br/> JavaScript, <br/> TypeScript, <br/> PHP, <br/> MaterialUI, <br/> HTML5/CSS3, <br/> JQuery, <br/> React, <br/> MongoDB, <br/> SQL, <br/> Git, <br/> Heroku 
+                    <p>HTML5/CSS3, <br/> JavaScript, <br/> TypeScript, <br/> PHP, <br/> MaterialUI, <br/> JQuery, <br/> React, <br/> MongoDB, <br/> SQL, <br/>MERN Stack, <br/>Git, <br/> Heroku 
                     </p>
                 </div>
             </div>
