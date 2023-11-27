@@ -80,6 +80,10 @@ header nav ul li {
     margin: 20px;
 }
 
+header span {
+    cursor: pointer;
+}
+
 .navActive span {
     font-weight: bold;
 }
