@@ -41,15 +41,15 @@ const Portfolio = () => {
             img: winePhoto
         },
     ];
-    // const freelanceProjects = [
-    //     {
-    //         name: 'Officiant of Love',
-    //         repoUrl: 'https://github.com/officiant-of-love/website',
-    //         deployedUrl: 'https://www.officiantoflovela.com/',
-    //         img: 'https://www.officiantoflovela.com/static/media/About.1d9abf3c74395c218dd5.jpg',
-    //         description: 'Helena is a Los Angeles based minister, ready to help you adjust to all phases of life.'
-    //     }
-    // ];
+    const freelanceProjects = [
+        {
+            name: 'Officiant of Love',
+            repoUrl: 'https://github.com/officiant-of-love/website',
+            deployedUrl: 'https://www.officiantoflovela.com/',
+            img: 'https://www.officiantoflovela.com/static/media/About.1d9abf3c74395c218dd5.jpg',
+            description: 'Helena is a Los Angeles based minister, ready to help you adjust to all phases of life.'
+        }
+    ];
 
     return (
         <section className="portfolio container">
@@ -61,12 +61,12 @@ const Portfolio = () => {
                     <Project project={featuredProjects[0]} />
                     <Project project={featuredProjects[1]} />
                 </div>
-                {/* <h3 className='display-6 text-center mt-3'>Freelance</h3>
+                <h3 className='display-6 text-center mt-3'>Freelance</h3>
                 <div className='secondary-projects'>
                     {freelanceProjects.map(project => (
                         <Project project={project} />
                     ))}
-                </div> */}
+                </div>
                 <h3 className='display-6 text-center mt-3'>Bootcamp</h3>
                 <div className="tertiary-projects">
                     {bootcampProjects.map(project => (
