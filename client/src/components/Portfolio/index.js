@@ -17,7 +17,7 @@ const Portfolio = () => {
         },
         {
             name: 'AppTrack',
-            deployedUrl: 'https://sw-app-tracker.herokuapp.com/',
+            deployedUrl: 'https://apptrack.sydneywalcoff.com/',
             repoUrl: 'https://github.com/sydneywalcoff/app-tracker',
             img: appTrackPhoto,
             description: 'AppTrack is a TypeScript React MongoDB Node.js application for job seekers to track their applications and optimize their search.',
